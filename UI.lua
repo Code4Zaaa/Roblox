@@ -235,7 +235,7 @@ fixLine.BorderSizePixel = 0
 fixLine.Position = UDim2.fromScale(0.5, 0)
 fixLine.Size = UDim2.fromOffset(225, 2)
 fixLine.Parent = backgroundFrame
-fixLine.ZIndex = 2
+--fixLine.ZIndex = 2
 
 local A = Instance.new("UIGradient")
 A.Color =
