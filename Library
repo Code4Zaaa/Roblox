@@ -1121,18 +1121,18 @@ fixLine2.AnchorPoint = Vector2.new(0.5, 1)
 fixLine2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 fixLine2.BorderSizePixel = 0
 fixLine2.Position = UDim2.fromScale(0.5, 1)
-fixLine2.Size = UDim2.fromOffset(225, 2)
+fixLine2.Size = UDim2.new(0, 212, 0, 2)
 fixLine2.ZIndex = 2
 fixLine2.Parent = topbar
 
 local A1 = Instance.new("UIGradient")
 A1.Color =
     ColorSequence.new {
-    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(36, 36, 36)),
-    ColorSequenceKeypoint.new(0.20, Color3.fromRGB(36, 36, 36)),
+    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(50, 50, 50)),
+    ColorSequenceKeypoint.new(0.20, Color3.fromRGB(50, 50, 50)),
     ColorSequenceKeypoint.new(0.50, Color3.fromRGB(131, 132, 255)),
-    ColorSequenceKeypoint.new(0.80, Color3.fromRGB(36, 36, 36)),
-    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(36, 36, 36))
+    ColorSequenceKeypoint.new(0.80, Color3.fromRGB(50, 50, 50)),
+    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(50, 50, 50))
 }
 A1.Name = "WindowLineGradient"
 A1.Parent = fixLine2
