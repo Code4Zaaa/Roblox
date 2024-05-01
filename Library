@@ -240,11 +240,11 @@ fixLine.ZIndex = 2
 local A = Instance.new("UIGradient")
 A.Color =
     ColorSequence.new {
-    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(36, 36, 36)),
-    ColorSequenceKeypoint.new(0.20, Color3.fromRGB(36, 36, 36)),
+    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(29, 29, 29)),
+    ColorSequenceKeypoint.new(0.20, Color3.fromRGB(29, 29, 29)),
     ColorSequenceKeypoint.new(0.50, Color3.fromRGB(131, 132, 255)),
-    ColorSequenceKeypoint.new(0.80, Color3.fromRGB(36, 36, 36)),
-    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(36, 36, 36))
+    ColorSequenceKeypoint.new(0.80, Color3.fromRGB(29, 29, 29)),
+    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(29, 29, 29))
 }
 A.Name = "WindowLineGradient"
 A.Parent = fixLine
