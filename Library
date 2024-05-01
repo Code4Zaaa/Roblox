@@ -1125,18 +1125,6 @@ fixLine2.Size = UDim2.fromOffset(225, 2)
 fixLine2.ZIndex = 2
 fixLine2.Parent = topbar
 
-local A1 = Instance.new("UIGradient")
-A1.Color =
-    ColorSequence.new {
-    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(50, 50, 50)),
-    ColorSequenceKeypoint.new(0.20, Color3.fromRGB(50, 50, 50)),
-    ColorSequenceKeypoint.new(0.50, Color3.fromRGB(131, 132, 255)),
-    ColorSequenceKeypoint.new(0.80, Color3.fromRGB(50, 50, 50)),
-    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(50, 50, 50))
-}
-A1.Name = "WindowLineGradient"
-A1.Parent = fixLine2
-
 local windowText = Instance.new("TextLabel")
 windowText.Name = "WindowText"
 windowText.Font = Enum.Font.GothamBold
