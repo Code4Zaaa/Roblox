@@ -304,6 +304,18 @@ fixLine1.Position = UDim2.fromScale(0.5, 0.0526)
 fixLine1.Size = UDim2.fromOffset(225, 4)
 fixLine1.Parent = button
 
+local A1 = Instance.new("UIGradient")
+A1.Color =
+    ColorSequence.new {
+    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(43, 43, 43)),
+    ColorSequenceKeypoint.new(0.20, Color3.fromRGB(43, 43, 43)),
+    ColorSequenceKeypoint.new(0.50, Color3.fromRGB(131, 132, 255)),
+    ColorSequenceKeypoint.new(0.80, Color3.fromRGB(43, 43, 43)),
+    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(43, 43, 43))
+}
+A1.Name = "LineGradient"
+A1.Parent = fixLine1
+
 local buttonTextButton = Instance.new("TextButton")
 buttonTextButton.Name = "ButtonTextButton"
 buttonTextButton.Font = Enum.Font.GothamBold
