@@ -240,11 +240,11 @@ fixLine.ZIndex = 2
 local A = Instance.new("UIGradient")
 A.Color =
     ColorSequence.new {
-    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(43, 43, 43)),
-    ColorSequenceKeypoint.new(0.20, Color3.fromRGB(43, 43, 43)),
+    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(36, 36, 36)),
+    ColorSequenceKeypoint.new(0.20, Color3.fromRGB(36, 36, 36)),
     ColorSequenceKeypoint.new(0.50, Color3.fromRGB(131, 132, 255)),
-    ColorSequenceKeypoint.new(0.80, Color3.fromRGB(43, 43, 43)),
-    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(43, 43, 43))
+    ColorSequenceKeypoint.new(0.80, Color3.fromRGB(36, 36, 36)),
+    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(36, 36, 36))
 }
 A.Name = "WindowLineGradient"
 A.Parent = fixLine
@@ -1128,14 +1128,14 @@ fixLine2.Parent = topbar
 local A1 = Instance.new("UIGradient")
 A1.Color =
     ColorSequence.new {
-    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(43, 43, 43)),
-    ColorSequenceKeypoint.new(0.20, Color3.fromRGB(43, 43, 43)),
+    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(36, 36, 36)),
+    ColorSequenceKeypoint.new(0.20, Color3.fromRGB(36, 36, 36)),
     ColorSequenceKeypoint.new(0.50, Color3.fromRGB(131, 132, 255)),
-    ColorSequenceKeypoint.new(0.80, Color3.fromRGB(43, 43, 43)),
-    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(43, 43, 43))
+    ColorSequenceKeypoint.new(0.80, Color3.fromRGB(36, 36, 36)),
+    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(36, 36, 36))
 }
 A1.Name = "WindowLineGradient"
-A.Parent = fixLine2
+A1.Parent = fixLine2
 
 local windowText = Instance.new("TextLabel")
 windowText.Name = "WindowText"
