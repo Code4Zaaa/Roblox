@@ -1106,9 +1106,9 @@ dragSliderButton.MouseButton1Down:Connect(function() -- Skidded from material ui
 	MouseMove = Mouse.Move:Connect(function()
 		local Px = library:GetXY(outerSlider)
 		local SizeFromScale = (MinSize +  (MaxSize - MinSize)) * Px
-		local nValue = GetValueFromXOffset(Px)
-		local Value = nValue
-		--local Value = math.floor(Info.Minimum + ((Info.Maximum - Info.Minimum) * Px))
+		--local nValue = GetValueFromXOffset(Px)
+		--local Value = nValue
+		local Value = math.floor(Info.Minimum + ((Info.Maximum - Info.Minimum) * Px))
 		SizeFromScale = SizeFromScale - (SizeFromScale % 2)
 		TweenService:Create(innerSlider, TweenInfo.new(0.1), {Size = UDim2.new(Px,0,0,4)}):Play()
 		TweenService:Create(dragSlider, TweenInfo.new(0.1), {Position = UDim2.new(Px,-4,0,2)}):Play()
