@@ -1091,7 +1091,7 @@ local function Round(Value)
 end;
 
 function GetValueFromXOffset(X)
-    return Round(library:MapValue(X, 0, Slider.MaxSize, Slider.Min, Slider.Max));
+    return Round(library:MapValue(X, 0, 100, Info.Minimum, Info.Maximum));
 end;
 
 
