@@ -951,7 +951,6 @@ Info.Postfix = Info.Postfix or ""
 Info.Minimum = Info.Minimum or 1
 Info.Default = Info.Default or 5
 Info.Maximum = Info.Maximum or 100
-Info.Rounding = Info.Rounding or 1
 Info.Callback = Info.Callback or function() end
     
 if Info.Minimum > Info.Maximum then
@@ -1081,20 +1080,6 @@ slider.MouseLeave:Connect(function()
     slider.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 end)
 
-local function Round(Value)
-    if Info.Rounding == 0 then
-	return math.floor(Value);
-    end;
-
-
-    return tonumber(string.format('%.' .. Info .. 'f', Value))
-end;
-
-function GetValueFromXOffset(X)
-    return Round(library:MapValue(X, 0, 100, Info.Minimum, Info.Maximum));
-end;
-
-
 local MinSize = 0
 local MaxSize = 1
 
@@ -1106,8 +1091,6 @@ dragSliderButton.MouseButton1Down:Connect(function() -- Skidded from material ui
 	MouseMove = Mouse.Move:Connect(function()
 		local Px = library:GetXY(outerSlider)
 		local SizeFromScale = (MinSize +  (MaxSize - MinSize)) * Px
-		--local nValue = GetValueFromXOffset(Px)
-		--local Value = nValue
 		local Value = math.floor(Info.Minimum + ((Info.Maximum - Info.Minimum) * Px))
 		SizeFromScale = SizeFromScale - (SizeFromScale % 2)
 		TweenService:Create(innerSlider, TweenInfo.new(0.1), {Size = UDim2.new(Px,0,0,4)}):Play()
