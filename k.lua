@@ -1,4 +1,3 @@
-print("tes")
 print(...)
 return (function(...)
     print("Received parameters:")
