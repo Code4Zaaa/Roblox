@@ -1,4 +1,5 @@
 print("tes")
+print(...)
 return (function(...)
     print("Received parameters:")
     for i, v in ipairs(...) do
