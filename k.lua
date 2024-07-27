@@ -1,7 +1,7 @@
 print("tes")
-return function(params)
+return function(...)
     print("Received parameters:")
-    for i, v in ipairs(params) do
+    for i, v in ipairs(...) do
         print(i, v)
     end
     -- Your custom logic here using the passed parameters
