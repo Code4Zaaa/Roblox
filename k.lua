@@ -1,3 +1,4 @@
+print("tes")
 return function(params)
     print("Received parameters:")
     for i, v in ipairs(params) do
